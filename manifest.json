@@ -1,0 +1,32 @@
+{
+  "description": "implements the session restore",
+  "manifest_version": 2,
+  "name": "session-restore",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "sessionrestore@mozilla.org"
+    }
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content-script.js",
+        "scroll.js",
+        "forms.js"
+      ]
+    }
+  ]
+}
