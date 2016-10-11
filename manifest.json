@@ -6,7 +6,7 @@
 
   "applications": {
     "gecko": {
-      "id": "sessionrestore@mozilla.org"
+      "id": "session-restore@mozilla.org"
     }
   },
 
